@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b5197a2e-c970-48e9-bff3-ef41e9bfa46a.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Connect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://rsms.me/inter/inter.css');
+        .gradient-bg {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        .prose h3 {
+            margin-top: 1.25em;
+            margin-bottom: 0.5em;
+        }
+        .prose ul {
+            list-style-position: inside;
+        }
+    </style>
+    <!-- Load markdown-to-jsx; 'markdown' will be a global variable -->
+    <script src="https://unpkg.com/markdown-to-jsx@latest/dist/index.umd.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
